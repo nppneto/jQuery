@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,6 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
     <style type="text/css">
-
         body {
 
             font-family: Arial, Helvetica, sans-serif;
@@ -72,10 +72,10 @@
             margin-bottom: 20px;
 
         }
-
     </style>
 
 </head>
+
 <body>
 
     <div id="wrapper">
@@ -85,7 +85,7 @@
         <div id="errorMessage"></div>
 
         <div class="form-element">
-    
+
             <label for="email">E-mail:</label>
             <input type="text" name="email" id="email" placeholder="eg.yourname@gmail.com">
 
@@ -99,28 +99,27 @@
         </div>
 
         <div class="form-element">
-                
+
             <label for="password">Password:</label>
             <input type="password" name="password" id="password">
-                
+
         </div>
 
         <div class="form-element">
-                
+
             <label for="passwordConfirm">Confirm Password:</label>
             <input type="password" name="passwordConfirm" id="passwordConfirm">
-                
+
         </div>
 
         <div class="form-element">
-                
+
             <input type="submit" id="submitButton" value="Sign Up">
-                
+
         </div>
 
     </div>
 
-    
     <script type="text/javascript">
 
         function isEmail(email) {
@@ -130,30 +129,30 @@
 
         }
 
-        $("#submitButton").click(function() {
+        $("#submitButton").click(function () {
 
             var errorMessage = "";
             var fieldsMissing = "";
 
-            if($("#email").val() == "") {
+            if ($("#email").val() == "") {
 
                 fieldsMissing += "<br>E-mail";
 
             }
 
-            if($("#phone").val() == "") {
+            if ($("#phone").val() == "") {
 
                 fieldsMissing += "<br>Telephone";
 
             }
 
-            if($("#password").val() == "") {
+            if ($("#password").val() == "") {
 
                 fieldsMissing += "<br>Password";
 
             }
 
-            if($("#passwordConfirm").val() == "") {
+            if ($("#passwordConfirm").val() == "") {
 
                 fieldsMissing += "<br>Confirm Password";
 
@@ -193,11 +192,12 @@
                 $("#errorMessage").hide();
 
             }
-            
+
 
         });
 
     </script>
 
 </body>
+
 </html>
