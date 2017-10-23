@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+
+    <link href="js/jquery-ui.css" rel="stylesheet">
+
+    <style type="text/css">
+    </style>
+
+
+</head>
+
+<body>
+
+    <ol id="sortable">
+
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Nelson</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Natasha</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Bryan</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Regina</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Celeste</li>
+
+    </ol>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
